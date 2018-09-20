@@ -100,8 +100,12 @@ def custom_insert(input_list, index, value):
         True
 
     """
-
-    pass
+    if index == custom_len(input_list) - 1:
+        input_list[index:] = [value, input_list[index]]
+    else:
+        input_list[index:index+1] = [input_list[index], value]
+    
+    return
 
 
 def custom_remove(input_list, value):
