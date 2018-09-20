@@ -227,8 +227,12 @@ def custom_contains(input_list, value):
         True
 
     """
+    for elem in input_list:
+        if elem == value:
+            return True
+        else:
+            return False
 
-    return None
 
 
 def custom_equality(some_list, another_list):
