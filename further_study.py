@@ -61,8 +61,9 @@ def custom_append(input_list, value):
         True
 
     """
+    input_list[-1:] = [input_list[-1], value]
 
-    pass
+    return
 
 
 def custom_extend(input_list, second_list):
