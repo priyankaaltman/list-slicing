@@ -230,8 +230,8 @@ def custom_contains(input_list, value):
     for elem in input_list:
         if elem == value:
             return True
-        else:
-            return False
+    
+    return False
 
 
 
@@ -250,8 +250,13 @@ def custom_equality(some_list, another_list):
         False
 
     """
+    for i in range(custom_len(some_list)):
+        if some_list[i] != another_list[i]:
+            return False
+            
+    return True
 
-    return None
+    
 
 
 ##############################################################################
