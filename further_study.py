@@ -123,8 +123,15 @@ def custom_remove(input_list, value):
         True
 
     """
+    for i in range(custom_len(input_list)):
+        if input_list[i] == value:
+            if i == custom_len(input_list) - 1:
+                input_list[i:] = []
+            else:
+                input_list[i:i+1] = []
+            return
+        
 
-    pass
 
 
 def custom_pop(input_list):
