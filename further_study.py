@@ -206,7 +206,9 @@ def custom_reverse(input_list):
 
     """
 
-    pass
+    input_list[:] = input_list[::-1]
+
+    return
 
 
 def custom_contains(input_list, value):
